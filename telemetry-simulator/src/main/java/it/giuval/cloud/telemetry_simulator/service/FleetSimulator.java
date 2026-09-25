@@ -2,7 +2,6 @@ package it.giuval.cloud.telemetry_simulator.service;
 
 import java.time.Instant;
 import java.util.List;
-import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadLocalRandom;
@@ -15,7 +14,6 @@ import org.springframework.stereotype.Service;
 
 import it.giuval.cloud.telemetry_simulator.domain.Drone;
 import it.giuval.cloud.telemetry_simulator.domain.DroneCommand;
-import it.giuval.cloud.telemetry_simulator.domain.DroneCommand.Recall;
 import it.giuval.cloud.telemetry_simulator.domain.DroneStatus;
 import it.giuval.cloud.telemetry_simulator.domain.Position;
 import it.giuval.cloud.telemetry_simulator.events.TelemetryEvent;
