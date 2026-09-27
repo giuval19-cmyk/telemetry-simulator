@@ -40,7 +40,7 @@ public class FleetController {
 	
 	@PostMapping("/launch")
 	public ResponseEntity<List<Drone>> launch() throws IOException {
-		List<Drone> fleet = fleetLoader.loadFromCsv(csvResource.getFilePath());
+		List<Drone> fleet = fleetLoader.loadFromCsv(csvResource.getInputStream());
 		
 		fleetSimulator.launch(fleet);
 		
